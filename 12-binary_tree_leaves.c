@@ -11,7 +11,7 @@ size_t leavs = 0;
 
 if (tree)
 {
-leavs += (!tree->left && !tree->right) : 0;
+leavs += (!tree->left && !tree->right) ? 1 : 0;
 leavs += binary_tree_leaves(tree->left);
 leavs += binary_tree_leaves(tree->right);
 }
