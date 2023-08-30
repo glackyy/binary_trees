@@ -11,9 +11,9 @@ if (tree)
 {
 	if ((tree->left != NULL && tree->right == NULL) ||
 	    (tree->left == NULL && tree->right != NULL) ||
-            full_recursive(tree->left) == 0 ||
+	    full_recursive(tree->left) == 0 ||
 	    full_recursive(tree->right) == 0)
-	     return (0);
+		return (0);
 }
 return (1);
 }
