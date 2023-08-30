@@ -16,7 +16,7 @@ if (n_node == NULL)
 	return (NULL);
 if (parent->left != NULL)
 {
-	new->left = parent->left;
+	n_node->left = parent->left;
 	parent->left->parent = n_node;
 }
 parent->left = n_node;
